@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tela cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7b407b7207.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div class="cx-maior">
+            
+       
+
+    <div class="box">
+         <!-- <img src="imgtesteonibus.jpeg" alt=""> -->
+
+        <div class="caixa login">
+                  
+
+                  <div class="lado1">
+                    <h2 class="titulo hello"> Hello student! </h2>
+                    <p class="descricao-1">Já possui uma conta?</p>
+                    <p class="descricao-1"> Não? então  aperte no botão </p>
+                    <p class=" descricao-1">logo abaixo para cadastrar-se  </p>
+
+                    <button id="signin" class="btn-ld1"> fazer cadastro </button>
+
+
+                 </div> <!-- lado1, login -->
+             
+
+                  <div class="lado2">
+                     <h2 class="titulo faca "> faça login </h2> 
+                       <div class="redes-social">
+                          
+                            <a class="link-redes-social" href="https://resultadosdigitais.com.br/marketing/whatsapp/" target="_blank">
+                           <li class="intem-redes-social"> <i class="fa-brands fa-whatsapp"></i></li>
+                        </a>
+                        <a class="link-redes-social" href="https://www.nuvemshop.com.br/blog/o-que-e-instagram/" target="_blank">
+                            <li class="intem-redes-social"><i class="fa-brands fa-instagram"></i></li>
+                        </a>
+                            <a class="link-redes-social" href="https://mundoeducacao.uol.com.br/informatica/email.htm" target="_blank">
+                               <li class="intem-redes-social"><i class="fa-regular fa-envelope"></i></li>
+                            </a>
+
+                            
+                           
+
+                       </div> <!-- redes social, login -->
+                              <p class="descricao-2"> Para assistencia recorra a <br>
+                                                         algum ícone a cima!  </p>
+                        
+                      <form class="form" method="POST" action="autentificacao.php">
+                            
+                        <label class="label-input" for="">
+                                <i class="fa-solid fa-user icone"></i>
+                                <input type="number" name="cpf" id="" placeholder="CPF ou CNH" > 
+                            </label> <!--cpf oou N.cnh-->
+                               <label class="label-input" for="">
+                                <i class="fa-solid fa-lock icone"></i>
+                               <input type="password" name="senha" id="" placeholder="password" > 
+                            </label> <!--senha-->
+                                <button type="submit" class="btn btn-ld2">login</button>
+
+                            
+                            </form>
+
+
+
+                 </div> <!-- lado2, login -->
+        
+        
+        
+        </div> <!-- login/ primeira pg -->
+
+
+<!-- /////////////////////////// /////       CADASTRO      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+
+        <div class="caixa cadastro">
+
+
+           
+                <div class="lado1">
+                  <h2 class="titulo hello"> hello student! </h2>
+                  <p class="descricao descricao-1">Já possui uma conta?</p>
+                  <p class="descricao descricao-1"> Sim? então aperte no botão  </p>
+                  <p class="descricao descricao-1" >logo abaixo para logar-se</p>
+                  
+                  <button id="signup" class="btn btn-ld1"> login in </button>
+
+
+               </div> <!-- lado1, cadastro-->
+
+                <div class="lado2">
+                   <h2 class="titulo titulo faca"> Cadastre-se </h2> 
+                   <div class="redes-social">
+                          
+                    <a class="link-redes-social" href="https://resultadosdigitais.com.br/marketing/whatsapp/" target="_blank">
+                   <li class="intem-redes-social"> <i class="fa-brands fa-whatsapp"></i></li>
+                </a>
+                <a class="link-redes-social" href="https://www.nuvemshop.com.br/blog/o-que-e-instagram/" target="_blank">
+                    <li class="intem-redes-social"><i class="fa-brands fa-instagram"></i></li>
+                </a>
+                    <a class="link-redes-social" href="https://mundoeducacao.uol.com.br/informatica/email.htm" target="_blank">
+                       <li class="intem-redes-social"><i class="fa-regular fa-envelope"></i></li>
+                    </a>
+
+                    
+                   
+
+               </div> <!-- redes social, cadastro -->
+                            <p class="descricao descricao-2"> cadastre-se com suas informações pessoais </p>
+                      
+                    <form class="form" action="cadastro.php" method="post"> 
+                        
+                        <div class="linha1">
+                             <label class="label-input" for="">
+                        <i class="fa-solid fa-user icone"></i>
+                        <input type="number" name="cpf" id="" placeholder="CPF ou CNH" required> 
+                    </label> <!--cpf oou N.cnh-->
+
+                             <label class="label-input" for="">
+                        <i class="fa-solid fa-lock icone"></i>
+                        <input type="password" name="senha" id="" placeholder="password" required>
+                    </label> <!--senha-->
+
+                </div>
+
+                              <label class="label-input" for="">
+                                <i class="fa-solid fa-bus" style="color: #3d4444;"></i>
+                        <input type="text" name="cit" id="" placeholder="cidade" required> 
+                    </label> <!--onibus-->
+                                  
+                              <label class="label-input" for="">
+                                <i class="fa-solid fa-location-dot" style="color: #2a2d32;"></i>
+                        <input type="text" name="tell" id="" placeholder="telefone para contato" required > 
+                    </label> <!--cidade destino -->
+
+                    <div id="codigoDiv" style="display:none;">
+                               
+                      <label class="label-input" for="">
+                        <i class="fa-sharp fa-solid fa-xmarks-lines icone"></i>
+                        
+                      <input type="text" id="codigo" name="codigo"   placeholder="cod.:XXXX">
+            
+                    </label>
+            
+                  </div>  <!--codigo que some e aparece -->
+                      
+                          
+                 <div class="opc-pai">    
+                <label id="condicao" class="opç" for="" >
+                            <input  class="motorista" type="radio" id="motorista" name="funcao" value="motorista">
+                            <label  for="Motorista">Motorista</label>
+
+                            <input class="pss" type="radio" id="Passageiro" name="funcao" value="passageiro" required>
+                            <label for="Passageiro">Passageiro</label>
+
+
+                
+
+                            <!--if condicao = motorista
+                             else condicao = passageiro-->
+
+            </label> <!-- opçoes -->
+
+        </div>   <!-- opçoes -->    
+        
+       
+
+                                  
+                            
+                             
+                              <button type="submit" class="btn btn-ld2" onclick="redirecionar()">Cadastrar</button>
+                             
+                          
+                          </form>
+
+                        </div> <!-- lado2, cadastro -->
+
+
+           
+
+
+
+
+
+          </div> <!-- cadastro/ segunda pg -->
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+</div> <!-- box -->
+
+</div> <!-- cx-maior -->
+    
+
+
+<!-- 
+<script>
+    function redirecionar() {
+      var btn = document.getElementById("motorista");
+
+      if (btn.checked) {
+        window.location.href = "telacodigo/codigo-verificacao.html";
+      } else{
+        window.location.href = "tela1passageiro-criar-perfil";
+        
+      }
+    }
+  </script> -->
+
+
+  <script src="trasicao.js" ></script>    
+
+
+<script>
+  function mostrarCodigo() {
+    var motoristaRadio = document.getElementById("motorista");
+    var passageiroRadio = document.getElementById("Passageiro");
+    var codigoDiv = document.getElementById("codigoDiv");
+
+    // Verifica se o botão de opção "motorista" está selecionado
+    if (motoristaRadio.checked) {
+      codigoDiv.style.display = "block"; // Mostra o campo "codigo"
+    } else {
+      codigoDiv.style.display = "none"; // Esconde o campo "codigo"
+    }
+  }
+
+  // Adiciona o evento "change" aos botões de opção
+  var motoristaRadio = document.getElementById("motorista");
+  var passageiroRadio = document.getElementById("Passageiro");
+
+  motoristaRadio.addEventListener("change", mostrarCodigo);
+  passageiroRadio.addEventListener("change", mostrarCodigo);
+</script>
+
+</body>
+</html>
+
+
+
+
+
+

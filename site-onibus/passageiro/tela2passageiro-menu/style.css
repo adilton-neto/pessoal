@@ -1,0 +1,266 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+.box{
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+
+}
+
+.heater{
+width: 100%;
+height: 13vh;
+display: flex;
+justify-content: center;
+background-color:  #009034;
+position: fixed;
+}
+
+.imagem{
+border-radius: 50%;
+height: 13vh;
+display: flex;
+margin-left: 80vh;
+}
+
+.barra-menu{
+width: 10vh;
+margin-right: 80vh;
+display: flex;
+height: 13vh;
+align-items: center;
+}
+
+
+.icone{
+display: flex;
+
+
+}
+
+.btn{
+height: 4vh;
+
+background-color:  #009034;
+border:none ;
+}
+
+
+.titulo-conteudo{
+display: flex;
+justify-content: center;
+margin-top: 118px;
+font-size: 20px;
+}
+
+.motoristas{
+ display: flex;
+height: 17vh;
+width: 40vh;
+/*background-color: blueviolet ;*/
+background-color: #b5b5b5;
+border-radius: 25px;
+padding: 40px;
+margin-left: 50px;
+margin-right: 50px;
+
+}
+
+.imagem-motorista-1{
+border-radius: 50%;
+height: 13vh;
+display: flex;
+margin-left: -20px;
+    
+}
+
+.informacao-motorista-1{
+display: flex;
+margin-left: 15px;
+font-size: 15px;
+flex-direction: column;
+
+margin-top: -30px;
+
+}
+
+.texto-motorista-1{
+margin-top: -3px;
+
+}
+
+
+
+.cx-6{
+display: flex;
+flex-direction: column;
+align-items: center;
+}  
+
+.icone-veiculo-6{
+display: flex;
+margin-top: 28px;
+
+}
+
+.tt-cx6{
+margin-top: 3px;
+
+}
+
+.ct1-conteudo{
+display: flex;
+align-items: center;
+justify-content: center;
+
+margin-top: 7vh;
+
+
+}
+
+.ct2-conteudo{
+display: flex;
+justify-content: center;
+margin-top: 7vh;
+
+}
+
+
+    
+
+.ct-conteudo{
+justify-content:center ;
+display: flex;
+flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* menu  testeteeeeeeeeeeeeeeeeeeeeeeeeee*/
+
+
+
+
+.menu {
+    position: fixed;
+    display: flex;
+    margin-top: 13vh;
+    top: 0;
+    left: -200px; /* Inicialmente oculto */
+    width: 160px;
+    height: 87vh;
+    background-color:  #048232;
+    transition: left 0.3s ease-in-out;
+   border: solid 1px black;
+  }
+  
+  .menu.visible {
+    left: 0; /* Aparece quando a classe "visible" é adicionada */
+    z-index: 10;
+  }
+  
+  .menu-item-maior {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    margin-top: 40px;
+  }
+
+.intem-mmenu-1{
+display: flex;
+height: 8vh;
+width: 160px;
+align-items: center;
+
+
+}
+
+.intem-mmenu-1.selected{
+background-color: #014e1d;
+
+}
+
+.icone1{
+   margin-left: 5vh; 
+   color: black;
+
+}
+
+.icone2{
+color: black;
+margin-left: 5.4vh;
+
+
+}
+
+.icone3{
+    color: black;
+    margin-left: 4.7vh;
+    
+    
+    }
+   
+ .icone4{
+color: black;
+margin-left: 5.5vh;
+        
+        
+        } 
+        
+        
+        .icone5{
+            color: black;
+            margin-left: 5.5vh;
+                    
+                    
+                    }
+
+.icone6{
+ color: black;
+ margin-left: 5.5vh;
+                                
+                                
+}  
+                  
+                    
+                  
+      
+  
+ 

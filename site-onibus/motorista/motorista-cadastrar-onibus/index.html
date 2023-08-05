@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7b407b7207.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <title>criar perfil</title>
+
+    <style>
+        /* Estilo personalizado para o campo de seleção */
+        .select2-container--default .select2-selection--multiple {
+          background-color: rgb(181, 178, 178);
+          border-radius: 25px;
+          border: none;
+          max-height: 100px;
+          overflow-y: auto; 
+        }
+    
+   
+        .select2-container--default .select2-results__option[aria-selected=true] {
+          background-color: rgb(199, 127, 127); /* Define a cor de fundo para as opções selecionadas */
+        }
+    
+      </style>
+
+
+
+
+</head>
+<body>
+
+
+
+    <div class="box">
+        <div class="heater">
+             <h1 class="ttk"> BUS NLT</h1>
+             <div class="cximg">
+            <img class="imagem" src="banner-lateral-campus-urucuca.png" alt="">
+        </div>
+        </div> 
+         <div class="titulo">
+            <h2 class="tt1">Cadastre o onibus!</h2>
+           
+         </div>
+         <div class="perfil">
+            
+            <div class="foto">
+
+                <img src="icone-do-onibus_609277-1523.avif" alt="">
+                
+                <button class="icone-button" onclick="openModal()">
+                    <i class="fa-solid fa-plus"></i><!-- Ícone de seta para baixo -->
+                </button>
+            
+            </div>
+
+            
+
+            <form class="form" action="informcao-perfil.php" method="POST" >
+
+             <div class=" item item-1">
+
+                 <label class="label" for="">
+                     <i class="fa-solid fa-user icone"></i>
+                     <input class="input" type="number" name="cpf" id="" placeholder="CPF/CNH motorista" > 
+                 </label>
+
+                 <label class="label" for="">
+                     <i class="fa-solid fa-lock icone"></i>
+                      <input class="input" type="number" name="chassi" id="" placeholder="chassi do veiculo" >
+                 </label> <!--senha-->
+
+             </div>  <!-- intem-1 -->
+
+             <div class="item intem-2">
+                
+            <label class="label" for="" style="margin-left: 25px;">
+                <i class="fa-sharp fa-solid fa-bus icone item-placa" ></i>
+                
+                <input class="input" type="text" name="placa" id="" placeholder="placa/XXX-0000" > 
+            </label>
+   
+
+            <label class="label" for="" style="margin-left: 45px;">
+                <i class="fa-sharp fa-solid fa-user-group"></i>
+                <input class="input cit" type="text" name="cor" id="" placeholder="cor-todas" > 
+            </label>
+
+        </div>  <!-- intem-2 -->
+
+
+<div class="item item-3">
+            <label class="label" for="" style="margin-left: 30px;">
+                <i class="fa-solid fa-receipt"></i>
+                <input class="input parada" type="text" name="assentos" id="" placeholder="quantidade de assentos disponiveis" > 
+            </label>
+
+
+
+            <label class="label" for="" style="margin-left: 22px;">
+                <i class="fa-solid fa-user icone"></i>
+                <input class="input motorista" type="tel" name="modelo" id="" placeholder="modelo" > 
+            </label>
+                   <!--item-solo-->
+
+        
+            
+            <!-- <label class="label" for="opcoes">
+                <i class="fa-sharp fa-solid fa-phone icone"></i>
+                <input class="ctt" type="tel" name="formacontato" id="" placeholder="lugares " >  
+                <select id="opcoes" name="pontosparada[]" multiple>
+                    <option class="ctt" value="opcao1"></option>
+                    <option class="ctt" value="opcao2">praça vila nova</option>
+                    <option class="ctt" value="opcao3">supermecado ferreira</option>
+                    <option class="ctt" value="opcao4"><p>praça lagoinha</p></option>
+                    <option class="ctt" value="opcao1">ipiranga avenida de mao dupla</option>
+                    <option class="ctt" value="opcao2">cruzamento alvorada</option>
+                    <option class="ctt" value="opcao3">honda</option>
+                    <option class="ctt" value="opcao4">ceep</option>
+                    <option class="ctt" value="opcao1">jose neves</option>
+                    <option class="ctt" value="opcao2">praça do feijão</option>
+                    <option class="ctt" value="opcao3">docelar</option>
+                    <option class="ctt" value="opcao4">praça semiterio</option>
+
+                </select>
+   
+
+            </label> -->
+
+
+        </div>  <!-- intem-3 -->
+
+
+        <div class="btn-1" style="margin-top: -15px;">
+            <input  class=" input b1" type="submit" value="concluido"  onclick="redirecionar()" > 
+        </div>
+       
+        </form>
+
+        </div>
+        <div class="butao">
+        <div class="butao1">
+        
+        <input class=" input btn b2" type="button" value="Pular!"  onclick="redirecionar()">
+    </div>
+
+</div>
+    </div> <!--box-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        function redirecionar() {
+            window.location.href = "http://localhost/site-onibus/login.html";
+         
+        }
+
+      </script>
+
+
+
+<!-- Incluir o script do jQuery (obrigatório para o Select2) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Incluir o script do Select2 -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+<!-- Script para inicializar o Select2 -->
+<script>
+  $(document).ready(function() {
+    // Verificar se é um dispositivo móvel (detectado pelo tamanho da tela)
+    const isMobileDevice = window.innerWidth <= 768;
+
+    // Inicializar o Select2 com ou sem busca, dependendo do dispositivo
+    $('#opcoes').select2({
+      width: '50vh',
+      placeholder: 'Selecione os pontos de parada',
+      allowClear: true,
+      minimumResultsForSearch: isMobileDevice ? -1 : 0 // Remover a busca em dispositivos móveis
+    });
+  });
+</script>
+
+
+
+<!-- ////////////////////// mobal    ////////////////////       -->
+
+
+
+<style>
+    /* Estilização do modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 400px;
+        height: 30vh;
+    }
+
+    /* Estilização do botão para abrir o modal */
+    .icone-button {
+        padding: 10px 20px;
+        background-color: rgb(82, 80, 80);
+        color: white;
+        border: none;
+        cursor: pointer;
+        height: 5vh;
+        width: 2vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 70%;
+        margin-left: -45px;
+       
+        margin-top: 115px;
+    }
+
+    /* Estilização do input file */
+    .file-input {
+        margin-top: 10px;
+    }
+    
+.btn-mobal-fechar{
+background-color: red;
+color: #ffff;
+border: none;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 54vh;
+margin-top: -14vh;
+width: 3.5vh;
+}
+
+</style>
+
+
+<!-- Botão para abrir o modal com ícone -->
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <button class="btn-mobal-fechar" type="button" onclick="closeModal()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <h2>Selecione uma imagem do veiculo!</h2>
+<p>observção: adicione a imagem depois do cadastro, e repita o chassi do veiculo para mmelhor funcionrm funcionsmento do sitema!</p>
+        <form action="informcao-perfil.php" method="post">
+            <input type="text" name="   chassi" placeholder="batido ">
+            <input type="file" class="" name="file" id="file">
+           
+        </form>
+    </div>
+</div>
+
+<script>
+    // Função para abrir o modal
+    function openModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "block";
+    }
+
+    // Função para fechar o modal
+    function closeModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+</script>
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+

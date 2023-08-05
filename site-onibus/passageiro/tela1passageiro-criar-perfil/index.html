@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7b407b7207.js" crossorigin="anonymous"></script>
+    <title>criar perfil</title>
+</head>
+<body>
+
+    <div class="box">
+        <div class="heater">
+             <h1 class="ttk"> BUS NLT</h1>
+             <div class="cximg">
+            <img class="imagem" src="banner-lateral-campus-urucuca.png" alt="">
+        </div>
+        </div> 
+         <div class="titulo">
+            <h1 class="tt1">Seu primeiro login? </h1>
+           
+         </div>
+         <div class="perfil">
+            <h2 class="tt3">Crie agora seu perfil:</h2>
+            <div class="foto">
+
+                <img src="4639606-perfil-foto-icone-ilustracao-isolado-no-fundo-branco-vetor.jpg" alt="">
+            </div>
+
+            
+
+            <form class="form" action="informcao-perfil.php" method="POST" >
+
+                <label class="label" for="">
+                    <i class="fa-solid fa-user icone"></i>
+                    <input type="number" name="cpf" id="" placeholder=" confirme seu CPF" > 
+                </label>
+
+                <label class="label" for="">
+                    <i class="fa-solid fa-lock icone"></i>
+                    <input type="password" name="senha" id="" placeholder=" confirme sua senha" >
+                </label> <!--senha-->
+
+            <label class="label" for="">
+                <i class="fa-solid fa-user icone"></i>
+                <input type="text" name="nome" id="" placeholder="nome" > 
+            </label>
+
+            <label class="label" for="">
+                <i class="fa-sharp fa-solid fa-location-dot icone"></i>
+                <input class="parada" type="text" name="pontoparada" id="" placeholder="ponto de parada" > 
+            </label>
+
+            <label class="label" for="">
+                <i class="fa-solid fa-city icone"></i>
+                <input class="cit" type="text" name="cidademomento" id="" placeholder="cidade momentania" > 
+            </label>
+            
+            <label class="label" for="">
+                <i class="fa-sharp fa-solid fa-phone icone"></i>
+                <input class="ctt" type="tel" name="formacontato" id="" placeholder="forma de contato" > 
+            </label>
+
+            <label class="label" for="">
+                <i class="fa-sharp fa-solid fa-bus icone"></i>
+                <input class="motorista" type="tel" name="onibus" id="" placeholder="onibus/motorista" > 
+            </label>
+
+
+            <input  class="btn b1" type="submit" value="concluido"  onclick="redirecionar()">
+        
+       
+        </form>
+
+        </div>
+        <div class="butao">
+        <div class="butao1">
+        
+        <input class="btn b2" type="button" value="Pular!"  onclick="redirecionar()">
+    </div>
+
+</div>
+    </div> <!--box-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        function redirecionar() {
+            window.location.href = "http://localhost/site-onibus/login.html";
+         
+        }
+
+      </script>
+
+    
+</body>
+</html>

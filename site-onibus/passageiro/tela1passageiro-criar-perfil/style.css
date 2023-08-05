@@ -1,0 +1,172 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+.box{
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.heater{
+width: 100%;
+height: 13vh;
+display: flex;
+justify-content: center;
+background-color:  #009034;
+}
+
+.imagem{
+border-radius: 50%;
+height: 13vh;
+display: flex;
+}
+
+
+
+.ttk{
+margin-right: 80vh;
+margin-left: 70vh;
+
+}
+
+.titulo{
+display: flex;
+justify-content: center;
+margin-left: -90vh;
+margin-top: 20px;
+}
+
+.tt1{
+font-size: 40px;
+/*color: #026727;*/
+    
+}
+
+
+.tt2{
+margin-top: 130px;
+margin-left: -90vh;
+
+}
+
+.tt3{
+margin-top: 30px;
+margin-left: 5vh;
+    
+    }
+
+.form{
+display: flex;
+flex-direction: column;
+margin-left: 30px;
+margin-top: 20px;
+}
+
+
+.label{
+margin: 20px;
+width: 30vh;
+display: flex;
+/*border: 1px solid black;
+border-radius: 15px;
+background-color: #fff;*/
+align-items: center;
+background-color: rgb(181, 178, 178);
+}
+
+.icone{
+margin-left: 7px;
+
+}
+
+input{
+width: 100%;
+margin-left: 5px;
+border: none;
+height: 5vh;
+border-radius: 15px;
+background-color: rgb(181, 178, 178);
+color: #fff;
+}
+
+.foto{
+display: flex;
+justify-content: center;
+width: 100%;
+
+}
+.foto img{
+height: 20vh;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+width: 25vh;
+}
+
+.perfil{
+    background-color: rgb(181, 178, 178);
+width: 100vh;
+border-radius: 17px;
+margin-left: 50vh;
+margin-top: 20px;
+}
+
+.butao{
+display: flex;
+
+justify-content: center;
+}
+
+.butao1{
+    display: flex;
+width: 100%;
+justify-content: flex-end;
+
+margin: 50px;
+}
+
+.btn{
+height: 6vh;
+width: 25vh;
+}
+
+.b1{
+    margin: 20px;
+    background-color: #009034;
+margin-left: 66vh;
+cursor: pointer ;
+font-weight: bold;
+font-size: 10px;
+text-transform: uppercase;
+transition: background-color .5s;   
+}
+
+.b1:hover{
+    background-color: transparent;
+    color: #fff;
+    border: #009034 solid 1px;
+    }
+
+.b2{
+background-color: rgb(98, 146, 21);
+margin-right: 4vh;
+cursor: pointer ;
+font-weight: bold;
+font-size: 10px;
+text-transform: uppercase;
+transition: background-color .5s;  
+
+}
+
+.b2:hover{
+
+    background-color: transparent;
+    color: #000000;
+    border: rgb(98, 146, 21) solid 1px;
+}
+
+
+
+

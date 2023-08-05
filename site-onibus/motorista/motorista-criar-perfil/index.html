@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7b407b7207.js" crossorigin="anonymous"></script>
+    <title>criar perfil</title>
+</head>
+<body>
+
+    <div class="box">
+        <div class="heater">
+             <h1 class="ttk"> BUS NLT</h1>
+             <div class="cximg">
+            <img class="imagem" src="banner-lateral-campus-urucuca.png" alt="">
+        </div>
+        </div> 
+         <div class="titulo">
+            <h2 class="tt1">Cadastro motorista realizado com suceeso!</h2>
+           
+         </div>
+         <div class="perfil">
+            <h2 class="tt3">Crie agora seu perfil:</h2>
+            <div class="foto">
+
+                <img src="4639606-perfil-foto-icone-ilustracao-isolado-no-fundo-branco-vetor.jpg" alt="">
+            </div>
+
+            
+
+            <form class="form" action="informcao-perfil.php" method="POST" >
+
+                <label class="label" for="">
+                    <i class="fa-solid fa-user icone"></i>
+                    <input type="number" name="cpf" id="" placeholder=" confirme seu CPF" > 
+                </label>
+
+                <label class="label" for="">
+                    <i class="fa-solid fa-lock icone"></i>
+                    <input type="password" name="senha" id="" placeholder=" confirme sua senha" >
+                </label> <!--senha-->
+
+            <label class="label" for="">
+                <i class="fa-solid fa-user icone"></i>
+                <input type="text" name="nome" id="" placeholder="nome completo (e apelido na frente)" > 
+            </label>
+
+            <label class="label" for="">
+                <i class="fa-sharp fa-solid fa-user-group"></i>
+                <input class="cit" type="text" name="apelido" id="" placeholder="apelido conhecido(abreviaçao do nome)" > 
+            </label>
+
+            <label class="label" for="">
+                <i class="fa-solid fa-receipt"></i>
+                <input class="parada" type="text" name="meiopagamento" id="" placeholder="pix ou alguma forma de pagamento on-line" > 
+            </label>
+
+        
+            
+            <label class="label" for="">
+                <i class="fa-sharp fa-solid fa-phone icone"></i>
+                <input class="ctt" type="tel" name="formacontato" id="" placeholder="forma de contato - popular" > 
+            </label>
+
+            <label class="label" for="">
+                <i class="fa-sharp fa-solid fa-bus icone"></i>
+                <input class="motorista" type="tel" name="onibus" id="" placeholder="onibus/placa e cor  " > 
+            </label>
+
+
+            <input  class="btn b1" type="submit" value="concluido"  onclick="redirecionar()">
+        
+       
+        </form>
+
+        </div>
+        <div class="butao">
+        <div class="butao1">
+        
+        <input class="btn b2" type="button" value="Pular!"  onclick="redirecionar()">
+    </div>
+
+</div>
+    </div> <!--box-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        function redirecionar() {
+            window.location.href = "http://localhost/site-onibus/motorista-cadastrar-onibus/index.html";
+         
+        }
+
+      </script>
+
+    
+</body>
+</html>
