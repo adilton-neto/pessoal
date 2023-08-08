@@ -1,0 +1,54 @@
+.foto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    }
+    .foto img{
+    height: 20vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    width: 25vh;
+    margin-top: 30px;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-top: 50px;
+    justify-content: center;
+    align-items: center;   
+    
+    }
+        
+
+
+.perfil{
+background-color: rgb(181, 178, 178);
+width: 100vh;
+height: 80vh;
+border-radius: 17px;
+margin-left: 50vh;
+margin-top: 125px;
+}   
+
+.intem{
+display: flex;
+flex-direction: row;
+width: 50%;
+margin-left: -150px;
+align-items: center;
+
+}
+
+.nome-receber{
+margin-left: 10px;
+
+}
+
+.icone{
+margin-left: -7px;
+margin-right: 10px;
+}

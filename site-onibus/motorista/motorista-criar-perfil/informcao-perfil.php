@@ -31,9 +31,9 @@ if (mysqli_num_rows($resultado) > 0) {
         mysqli_stmt_close($stmt_atualizar);
         mysqli_stmt_close($stmt_consulta);
         mysqli_close($conexao);
-        header("Location: http://localhost/site-onibus/motorista-cadastrar-onibus/index.html");
+        header("Location: ../motorista-cadastrar-onibus/index.html");
         exit();
-    } else {
+    } else {    
         echo "Erro ao atualizar o usuário: " . mysqli_stmt_error($stmt_atualizar);
     }
 

@@ -52,16 +52,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt_atualizar = mysqli_prepare($conexao, $atualizar_dados);
         mysqli_stmt_bind_param($stmt_atualizar, "sss", $horario, $chassi, $nome);
 
-        if (mysqli_stmt_execute($stmt_atualizar)) {
-            // Dados atualizados com sucesso, redirecionar para a página de menu
-            mysqli_stmt_close($stmt_atualizar);
+        if (mysqli_stmt_execute($stmt_inserir)) {
+            // Dados inseridos com sucesso, redirecionar para a página de menu
+            mysqli_stmt_close($stmt_inserir);
             mysqli_stmt_close($stmt_consulta_nome);
             mysqli_close($conexao);
-            header("Location: http://localhost/site-onibus/motorista-cadastrar-onibus/index.html");
+            header("Location: index.php"); // Redireciona para index.php
             exit();
         } else {
-            echo "Erro ao atualizar os dados: " . mysqli_stmt_error($stmt_atualizar);
+            echo "Erro ao inserir os dados: " . mysqli_stmt_error($stmt_inserir);
         }
+        
 
         // Fechar o statement de atualização
         mysqli_stmt_close($stmt_atualizar);
@@ -76,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             mysqli_stmt_close($stmt_inserir);
             mysqli_stmt_close($stmt_consulta_nome);
             mysqli_close($conexao);
-            header("Location: http://localhost/site-onibus/motorista-cadastrar-onibus/index.html");
+            header("Location: index.php");
             exit();
         } else {
             echo "Erro ao inserir os dados: " . mysqli_stmt_error($stmt_inserir);
@@ -97,49 +98,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-<?php
 
-// require("conexao.php");
-
-// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//     // Recupera os dados do formulário
-//     $horario = $_POST['horario'];
-//     $nome = $_POST['nome'];
-//     $chassi = $_POST['chassi'];
-
-//     // Verificar se o chassi existe na tabela "onibus"
-//     $consulta_chassi = "SELECT * FROM onibus WHERE chassi = ?";
-//     $stmt_consulta_chassi = mysqli_prepare($conexao, $consulta_chassi);
-//     mysqli_stmt_bind_param($stmt_consulta_chassi, "s", $chassi);
-//     mysqli_stmt_execute($stmt_consulta_chassi);
-//     $resultado_chassi = mysqli_stmt_get_result($stmt_consulta_chassi);
-
-//     if (mysqli_num_rows($resultado_chassi) === 0) {
-//         // O chassi não existe na tabela "onibus", emitir mensagem de erro
-//         echo "Chassi não encontrado na tabela de ônibus. Verifique o chassi e tente novamente.";
-//         mysqli_stmt_close($stmt_consulta_chassi);
-//         mysqli_close($conexao);
-//         exit();
-//     }
-
-//     // Realizar a inserção na tabela "onibus"
-//     $inserir_dados = "INSERT INTO onibus (horario, nome) VALUES (?, ?)";
-//     $stmt_inserir = mysqli_prepare($conexao, $inserir_dados);
-//     mysqli_stmt_bind_param($stmt_inserir, "ss", $horario, $nome);
-
-//     if (mysqli_stmt_execute($stmt_inserir)) {
-//         // Dados inseridos com sucesso, redirecionar para a página de menu
-//         mysqli_stmt_close($stmt_inserir);
-//         mysqli_stmt_close($stmt_consulta_chassi);
-//         mysqli_close($conexao);
-//         header("Location: http://localhost/site-onibus/motorista-cadastrar-onibus/index.html");
-//         exit();
-//     } else {
-//         echo "Erro ao inserir os dados: " . mysqli_stmt_error($stmt_inserir);
-//         mysqli_stmt_close($stmt_inserir);
-//         mysqli_stmt_close($stmt_consulta_chassi);
-//         mysqli_close($conexao);
-//         exit();
-//     }
-// }
-?>

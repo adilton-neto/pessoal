@@ -85,10 +85,10 @@ if ($funcao === "passageiro") {
 if (mysqli_query($conexao, $sql)) {
     // Cadastro concluído com sucesso
     if ($funcao === "motorista") {
-        header("location: motorista-criar-perfil\index.html"); // Redireciona para a página do motorista
+        header("location: ../site-onibus/motorista/motorista-criar-perfil\index.html"); // Redireciona para a página do motorista
     } else {
-        header("location: tela1passageiro-criar-perfil\index.html"); // Redireciona para a página do passageiro
-    }
+        header("location: ../site-onibus/passageiro/tela1passageiro-criar-perfil\index.html"); // Redireciona para a página do passageiro
+    }   
     exit();
 } else {
     echo "Erro ao cadastrar usuário: " . mysqli_error($conexao);

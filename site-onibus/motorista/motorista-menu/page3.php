@@ -7,7 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+
+
+
+
 <div class="caixa">
 
 
@@ -19,7 +23,7 @@
             <th>QUARTA</th>
             <th>QUINTA</th>
             <th>SEXTA</th>
-            
+            <th>ALTERAR</th>
             
         </tr>
        
@@ -42,7 +46,7 @@
             <td> <p class="alterar"> <?php echo  $dadosUsuario['horarioQuarta'] ?></p></td>
             <td> <p class="alterar"> <?php echo  $dadosUsuario['horarioQuinta'] ?></p></td>
             <td> <p class="alterar"> <?php echo  $dadosUsuario['horarioSexta'] ?></p></td>
-    
+            <td ><a class="alterar" href="alterar_horario.php?id=' . getRowId($row) . '">Alterar Horário</a></td> 
            
         </tr>
 <?php
@@ -74,7 +78,7 @@
             <td> <p class="alterar"> <?php echo  $dadosUsuario['horarioQuarta'] ?></p></td>
             <td> <p class="alterar"> <?php echo  $dadosUsuario['horarioQuinta'] ?></p></td>
             <td> <p class="alterar"> <?php echo  $dadosUsuario['horarioSexta'] ?></p></td>
-   
+            <td ><a class="alterar" href="alterar_horario.php?id=' . getRowId($row) . '">Alterar Horário</a></td> 
             
         </tr>
 
@@ -105,7 +109,7 @@
             <td> <p class="alterar"> <?php echo  $dadosUsuario['horarioQuarta'] ?></p></td>
             <td> <p class="alterar"> <?php echo  $dadosUsuario['horarioQuinta'] ?></p></td>
             <td> <p class="alterar"> <?php echo  $dadosUsuario['horarioSexta'] ?></p></td>
-         
+            <td ><a class="alterar" href="alterar_horario.php?id=' . getRowId($row) . '">Alterar Horário</a></td> 
            
         </tr>
 
@@ -138,7 +142,7 @@
             <td> <p class="alterar"> <?php echo  $dadosUsuario['horarioQuarta'] ?></p></td>
             <td> <p class="alterar"> <?php echo  $dadosUsuario['horarioQuinta'] ?></p></td>
             <td> <p class="alterar"> <?php echo  $dadosUsuario['horarioSexta'] ?></p></td>
-           
+            <td ><a class="alterar" href="alterar_horario.php?id=' . getRowId($row) . '">Alterar Horário</a></td> 
             
         </tr>
 
@@ -154,18 +158,10 @@
     </table>
 
 
-
-
-
-
-
-
-
     </div>
 
-
-    <!-- mudar bd, chave secndaria cpf e horario para time na tabela onibus  -->
 
 
 </body>
 </html>
+

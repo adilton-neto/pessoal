@@ -31,6 +31,16 @@ margin-top:15vh;
  <div class="conteudo-comprovante-2">
      
 
+<form action="upload.php" method="post" enctype="multipart/form-data" >
+
+
+<input type="file" name="arquivo">
+<button type="subimt" > enviar </button>
+
+
+
+</form>
+
 
 
 
@@ -78,16 +88,6 @@ if (isset($_SESSION['cpf'])) {
 
 
 
-
-<form action="upload.php" method="post" enctype="multipart/form-data" >
-
-
-<input type="file" name="arquivo">
-<button type="subimt" > enviar </button>
-
-
-
-</form>
 
 
 

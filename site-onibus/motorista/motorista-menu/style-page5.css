@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');  
+
+
+.box{
+width: 100%;
+
+}
+
+
+
+
+
+.redes-social{
+    display: flex;
+    list-style-type: none;
+   margin-left: 50vh;
+
+
+    }
+    
+    .intem-redes-social a{
+    color: #95a5a6;
+    
+    }
+    
+    .link-redes-social{
+    color: #95a5a6;
+    margin-left: 30px;
+    }
+    
+    .link-redes-social:hover .intem-redes-social {
+    background-color: rgb(0, 136, 0) ;
+    color: #ffffff;
+    
+    }
+    
+    .intem-redes-social{
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 10px;
+    transition: background-color 1s;   
+    }

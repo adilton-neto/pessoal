@@ -64,7 +64,7 @@ if (mysqli_num_rows($resultado) > 0) {
         mysqli_stmt_close($stmt_atualizar);
         mysqli_stmt_close($stmt_consulta);
         mysqli_close($conexao);
-        header("Location: http://localhost/site-onibus/tela2passageiro-menu/index.html");
+        header("Location: ../site-onibus/passageiro/tela2passageiro-menu/index.html");
         exit();
     } else {
         echo "Erro ao atualizar o usuário: " . mysqli_stmt_error($stmt_atualizar);

@@ -41,7 +41,6 @@ display: flex;
 
 }
 
-
 .btn{
 height: 4vh;
 
@@ -103,23 +102,27 @@ align-items: center;
 
 .icone-veiculo-6{
 display: flex;
-margin-top: 10px;
+margin-top: 28px;
 
 }
 
 .tt-cx6{
-margin-top: -20px;
+margin-top: -28px;
 
 }
 
+  
 .tt2-cx6{
-  margin-top: -4px;
+    margin-top: -4px;
 }
-
+  
 .texto-cx6{
-margin-top: -4px;
-
+  margin-top: -4px;
+  
 }
+
+
+
 
 .ct1-conteudo{
 display: flex;
