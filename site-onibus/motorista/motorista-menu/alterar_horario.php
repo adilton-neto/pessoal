@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-horario.css">
+</head>
+<body>
+
+ <div class="box">
+        <div class="heater">
+             <h1 class="ttk"> BUS NLT</h1>
+             <div class="cximg">
+            <img class="imagem" src="banner-lateral-campus-urucuca.png" alt="">
+        </div>
+        </div> 
+       
+    
+
+
 <?php
 
 include("conexao.php");
@@ -29,7 +50,7 @@ $result = mysqli_query($conexao, $consulta);
 
 if (mysqli_num_rows($result) > 0) {
     // Exibir os horários em um formulário para edição
-    echo '<table border="1">';
+    echo '<table class="tabela-horario" border="1px">';
     echo '<tr><th>ID</th><th>Segunda-feira</th><th>Terça-feira</th><th>Quarta-feira</th><th>Quinta-feira</th><th>Sexta-feira</th><th>Ação</th></tr>';
 
     while ($row = mysqli_fetch_assoc($result)) {
@@ -41,7 +62,7 @@ if (mysqli_num_rows($result) > 0) {
         echo '<td><input type="time" name="horarioQuarta" value="' . $row['horarioQuarta'] . '"></td>';
         echo '<td><input type="time" name="horarioQuinta" value="' . $row['horarioQuinta'] . '"></td>';
         echo '<td><input type="time" name="horarioSexta" value="' . $row['horarioSexta'] . '"></td>';
-        echo '<td><input type="hidden" name="id" value="' . $row['id'] . '"><input type="submit" value="Alterar"></td>';
+        echo '<td><input type="hidden" name="id" value="' . $row['id'] . '"><input class="alterar-horario" type="submit" value="Alterar"></td>';
         echo '</form>';
         echo '</tr>';
     }
@@ -53,3 +74,10 @@ if (mysqli_num_rows($result) > 0) {
 
 mysqli_close($conexao);
 ?>
+
+<a href="index.html"><button class="concluido-horario" type="button"> concluido</button></a>
+
+</div>
+
+</body>
+</html>

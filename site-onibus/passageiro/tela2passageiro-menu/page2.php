@@ -18,36 +18,6 @@ require("conexao.php");
 
 ?>
 
-                <?php
-                // include("conexao.php");
-
-                // $sql = "SELECT modelo, placa FROM onibus";
-                // $resultado = mysqli_query($conexao, $sql);
-
-                // if (mysqli_num_rows($resultado) > 0) {
-                //     while ($row = mysqli_fetch_assoc($resultado)) {
-
-
-                //         echo '<div class="item-onibus">';
-                //         echo '<div class="foto">';
-                //         echo '<img src="icone-do-onibus_609277-1523.avif" alt="">';
-                //         echo '</div>';
-                
-                //         echo '<p class="item item-nome"> Nome:  '. $row['modelo'] . '</p>';
-                //         echo '<p class="item item-modelo"> Modelo:  '. $row['modelo'] . '</p>';
-                //         echo '<p class="item item-placa">Placa:  ' . $row['placa'] . '</p>';
-                //         echo'<div class="btn-cx">';
-                //         echo '<button class="item item-btn" value="detalhar"> Detalhar</button>';
-                //         echo '</div>';
-                //         echo '</div>';
-                //     }
-                // } else {
-                //     echo "colspan='2'>Nenhum ônibus cadastrado.</td></tr>";
-                // }
-
-                // mysqli_close($conexao);
-                ?>
-      
 
       <?php
     include("conexao.php");

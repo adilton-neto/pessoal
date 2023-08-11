@@ -246,9 +246,11 @@ if (mysqli_num_rows($resultado) == 0) {
 mysqli_close($conexao);
 ?>
 
+<div class="btn-concluido-cixa">
 
-
-
+             <a href="http://localhost//site-onibus/login.html?"><button class="btn-concluido" type="button">concluido</button></a>                          
+             
+</div>
 
 
 

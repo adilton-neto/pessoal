@@ -1,0 +1,71 @@
+
+.tabela{
+    margin-top: 20vh;
+    width: 50%;
+    margin-left: 30vh;
+}  
+
+.heater{
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    background-color:  #009034;
+    position: fixed;
+    margin-top: -20vh;
+    margin-left: -8px;
+}
+    
+.imagem{
+    border-radius: 50%;
+    height: 13vh;
+    display: flex;
+    margin-left: 80vh;
+}
+    
+.barra-menu{
+    width: 10vh;
+    margin-right: 80vh;
+    display: flex;
+    height: 13vh;
+    align-items: center;
+}
+
+
+
+.btn-concluido{
+    width: 15vh;
+    height: 5vh;
+    background-color: #009034;
+    display: flex;
+    color: #dbffd3;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    
+    }
+    
+.btn-concluido:hover{
+    background-color: transparent;
+    color: #009034;
+    border: 1px solid #009034;
+    
+}
+    
+.btn-concluido-cixa{
+    margin-top: 30px;
+    display: flex;
+    margin-right: 50px;
+    justify-content: flex-end;
+    
+}
+
+
+.th-nome{
+padding: 30px;
+
+}
+
+
+

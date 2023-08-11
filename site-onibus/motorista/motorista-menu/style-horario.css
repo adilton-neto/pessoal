@@ -1,0 +1,104 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+.box{
+width: 100%;
+height: 99.7vh;
+display: flex;
+flex-direction: column;
+
+}
+
+.heater{
+width: 100%;
+height: 13vh;
+display: flex;
+justify-content: center;
+background-color:  #009034;
+position: fixed;
+}
+
+.imagem{
+border-radius: 50%;
+height: 13vh;
+display: flex;
+
+}
+
+
+.ttk{
+    margin-right: 80vh;
+    margin-left: 70vh;
+    
+    }
+
+
+
+
+.tabela-horario{
+width: 150vh;
+height: 55vh;
+margin-top: 20vh;
+display: flex;
+margin-left: 30vh;
+
+}
+
+
+th{
+width: 100vh;
+
+}
+
+
+
+tr{
+width: 100vh;
+height: 10.7vh;
+}
+
+
+input{
+
+    border: none;
+}
+
+.alterar-horario{
+border-radius: 15px;
+width: 90px;
+height: 30px;
+margin-left: 40px;
+background-color: rgb(182, 250, 79);
+
+
+}
+
+
+.alterar-horario:hover{
+background-color: transparent;
+color: #000;
+border: yellow 1px solid;
+
+}
+
+
+.concluido-horario{
+    border-radius: 15px;
+    width: 90px;
+    height: 30px;
+    margin-left: 40px;
+    background-color: #009034;
+    border: none;
+    margin-top: 50px;
+    margin-left: 170vh;
+    color: #fff;
+    
+}
+
+
+.concluido-horario:hover{
+    background-color: transparent;
+    color: #066629 ;
+    border: #009034 1px solid;
+}

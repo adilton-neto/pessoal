@@ -17,14 +17,15 @@
 </div>
 
 <div class="form"> 
-    <?php
+
+
+
+<?php
     // Inicialize a sessão para acessar os dados do usuário logado
     session_start();
 
     // Verifique se o usuário está logado
     if (isset($_SESSION['cpf']) && isset($_SESSION['senha'])) {
-       
-
         $cpf = $_SESSION['cpf'];
         $senha = $_SESSION['senha'];
 
@@ -33,42 +34,74 @@
             die("Falha na conexão: " . mysqli_connect_error());
         }
 
-        // Consulta SQL para buscar as informações do usuário
-        $query = "SELECT nome, pontoparada, cidademomento, formacontato, onibus FROM passageiro WHERE cpf = '$cpf' AND senha = '$senha'";
+        // Consulta SQL para buscar as informações do motorista
+        $query = "SELECT nome, cit, meiopagamento, formacontato, onibus FROM motorista WHERE cpf = '$cpf' AND senha = '$senha'";
         $result = mysqli_query($conexao, $query);
 
-?>
+        // Verifique se a consulta foi executada com sucesso
+        if ($result) {
+            // Verifique se encontrou algum motorista
+            if (mysqli_num_rows($result) > 0) {
+                $dadosMotorista = mysqli_fetch_assoc($result);
 
-<?php
-        // Verifique se encontrou algum usuário
-        if (mysqli_num_rows($result) > 0) {
-         
-            $dadosUsuario = mysqli_fetch_assoc($result);
+                echo '<div class="intem">';
+                echo '<i class="fa-solid fa-user icone"></i>';
+                echo '<h3 class="nome-padrao">Nome:</h3>';
+                echo '<p class="nome-receber">' . $dadosMotorista['nome'] . '</p>';
+                echo '</div>';
 
-            ?>
+                echo '<div class="intem">';
+                echo '<i class="fa-sharp fa-solid fa-location-dot icone"></i>';
+                echo '<h3 class="nome-padrao">Cidade:</h3>';
+                echo '<p class="nome-receber">' . $dadosMotorista['cit'] . '</p>';
+                echo '</div>';
 
+                echo '<div class="intem">';
+                echo '<i class="fa-solid fa-city icone"></i>';
+                echo '<h3 class="nome-padrao">Forma de pagamento:</h3>';
+                echo '<p class="nome-receber">' . $dadosMotorista['meiopagamento'] . '</p>';
+                echo '</div>';
 
-               <div class="intem"> <i class="fa-solid fa-user icone"></i> <h3 class="nome-padrao">Nome: </h3> <p class="nome-receber" > <?php echo $dadosUsuario['nome']  ?> </p> </div>
-               <div class="intem">  <i class="fa-sharp fa-solid fa-location-dot icone"></i>  <h3 class="nome-padrao">Ponto de Parada: </h3>  <p class="nome-receber" > <?php echo  $dadosUsuario['pontoparada'] ?> </p>  </div>
-               <div class="intem"> <i class="fa-solid fa-city icone"></i> <h3 class="nome-padrao">Cidade Momento: </h3> <p class="nome-receber" > <?php echo $dadosUsuario['cidademomento']  ?> </p> </div>
-               <div class="intem">  <i class="fa-sharp fa-solid fa-phone icone"></i> <h3 class="nome-padrao">Forma de Contato: </h3> <p class="nome-receber" > <?php echo  $dadosUsuario['formacontato'] ?> </p> </div>
-               <div class="intem"> <i class="fa-sharp fa-solid fa-bus icone"></i> <h3 class="nome-padrao">Ônibus: </h3> <p class="nome-receber" > <?php echo $dadosUsuario['onibus'] ?> </p> </div>
-       
-       
-     <?php
-       
+                echo '<div class="intem">';
+                echo '<i class="fa-sharp fa-solid fa-phone icone"></i>';
+                echo '<h3 class="nome-padrao">Forma de Contato:</h3>';
+                echo '<p class="nome-receber">' . $dadosMotorista['formacontato'] . '</p>';
+                echo '</div>';
+
+                echo '<div class="intem">';
+                echo '<i class="fa-sharp fa-solid fa-bus icone"></i>';
+                echo '<h3 class="nome-padrao">Ônibus:</h3>';
+                echo '<p class="nome-receber">' . $dadosMotorista['onibus'] . '</p>';
+                echo '</div>';
+            } else {
+                echo "CPF ou senha incorretos.";
+            }
+
+            // Libere o resultado da consulta
+            mysqli_free_result($result);
         } else {
-            
-            echo "CPF ou senha incorretos.";
+            echo "Erro na consulta: " . mysqli_error($conexao);
         }
 
+        // Fechar a conexão com o banco de dados
         mysqli_close($conexao);
     } else {    
         //header("Location: login.php");
         //exit();
-        echo "n esta logado";
+        echo "não está logado";
     }
-    ?>
+?>
+
+
+
+
+
+
+
+
+
+<!-- teste -->
+
   </div>
 </div>    
 
